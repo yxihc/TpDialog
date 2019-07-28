@@ -4,7 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.taopao.tpdialog.IOSLoadingDialog;
+import com.taopao.tpdialog.TpIOSLoadingDialog;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,6 +16,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void showLoading(View view){
-        new IOSLoadingDialog(this).show();
+        new TpIOSLoadingDialog(this).show();
     }
 }

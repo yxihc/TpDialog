@@ -11,21 +11,21 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-public class IOSLoadingView extends LinearLayout {
+public class TpIOSLoadingView extends LinearLayout {
     private ProgressBar progressBar;
     private TextView tv;
     private ImageView iv;
     private Context context;
 
-    public IOSLoadingView(Context context) {
+    public TpIOSLoadingView(Context context) {
         this(context, null);
     }
 
-    public IOSLoadingView(Context context, @Nullable AttributeSet attrs) {
+    public TpIOSLoadingView(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public IOSLoadingView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public TpIOSLoadingView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         this.context = context;
         init();

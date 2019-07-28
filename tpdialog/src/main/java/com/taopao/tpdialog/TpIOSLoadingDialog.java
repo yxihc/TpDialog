@@ -9,19 +9,19 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
-public class IOSLoadingDialog extends Dialog {
+public class TpIOSLoadingDialog extends Dialog {
 
     private View mRootView;
 
     private Context mContext;
-    private IOSLoadingView mLoadingview;
+    private static TpIOSLoadingView mLoadingview;
 
-    public IOSLoadingDialog(Context context) {
+    public TpIOSLoadingDialog(Context context) {
         super(context, R.style.TpDialogTra);
         init(context);
     }
 
-    public IOSLoadingDialog(Context context,boolean isBlack) {
+    public TpIOSLoadingDialog(Context context, boolean isBlack) {
         super(context, R.style.TpDialog);
         init(context);
 
@@ -42,7 +42,7 @@ public class IOSLoadingDialog extends Dialog {
         mLoadingview = rootView.findViewById(R.id.loadingview);
 
     }
-    public IOSLoadingDialog(Context context, int themeResId) {
+    public TpIOSLoadingDialog(Context context, int themeResId) {
         super(context, themeResId);
         setContentView(R.layout.diaolg_loading);
         init(context);

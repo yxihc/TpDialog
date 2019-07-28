@@ -3,8 +3,8 @@
     android:orientation="vertical" android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
-    <com.taopao.tpdialog.IOSLoadingView
+    <com.taopao.tpdialog.TpIOSLoadingView
         android:id="@+id/loadingview"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"></com.taopao.tpdialog.IOSLoadingView>
+        android:layout_height="wrap_content"></com.taopao.tpdialog.TpIOSLoadingView>
 </LinearLayout>
