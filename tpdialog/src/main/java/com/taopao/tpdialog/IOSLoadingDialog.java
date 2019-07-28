@@ -10,6 +10,12 @@ import android.view.Window;
 import android.view.WindowManager;
 
 public class IOSLoadingDialog extends Dialog {
+
+    private View mRootView;
+
+    private Context mContext;
+    private IOSLoadingView mLoadingview;
+
     public IOSLoadingDialog(Context context) {
         super(context, R.style.TpDialogTra);
         init(context);
@@ -21,32 +27,21 @@ public class IOSLoadingDialog extends Dialog {
 
     }
     private void init(Context context) {
-        setContentView(R.layout.diaolg_loading);
+//        setContentView(R.layout.diaolg_loading);
+        mContext=context;
+        mRootView = View.inflate(context, R.layout.diaolg_loading, null);
+        setContentView(mRootView);
         Window window = getWindow();
         WindowManager.LayoutParams params = window.getAttributes();
         params.gravity = Gravity.CENTER;
         window.setAttributes(params);
+        initView(context,mRootView);
     }
 
-    /**
-     * 宽高由该方法的参数设置
-     */
-    public IOSLoadingDialog(Context context, int width, int height, View layout,
-                               int style) {
-        super(context, style);
-        // 设置内容
-        setContentView(layout);
-        // 设置窗口属性
-        Window window = getWindow();
-        WindowManager.LayoutParams params = window.getAttributes();
-        // 设置宽度、高度、密度、对齐方式
-        float density = getDensity(context);
-        params.width = (int) (width * density);
-        params.height = (int) (height * density);
-        params.gravity = Gravity.CENTER;
-        window.setAttributes(params);
-    }
+    private void initView(Context context, View rootView) {
+        mLoadingview = rootView.findViewById(R.id.loadingview);
 
+    }
     public IOSLoadingDialog(Context context, int themeResId) {
         super(context, themeResId);
         setContentView(R.layout.diaolg_loading);
@@ -64,7 +59,9 @@ public class IOSLoadingDialog extends Dialog {
         DisplayMetrics dm = res.getDisplayMetrics();
         return dm.density;
     }
-
+    public void setMessage(String message){
+        mLoadingview.setText(message);
+    }
 
 
 }

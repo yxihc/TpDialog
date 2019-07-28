@@ -53,15 +53,37 @@ public class IOSLoadingView extends LinearLayout {
         iv.setImageResource(R.mipmap.load_success);
         iv.setVisibility(View.VISIBLE);
         progressBar.setVisibility(GONE);
+        tv.setText("加载成功");
     }
 
     /**
-     *失败
+     * 成功
+     */
+    public void showSuccess(String message) {
+        iv.setImageResource(R.mipmap.load_success);
+        iv.setVisibility(View.VISIBLE);
+        progressBar.setVisibility(GONE);
+        tv.setText(message);
+    }
+
+    /**
+     * 失败
      */
     public void showFail() {
         iv.setImageResource(R.mipmap.load_fail);
         iv.setVisibility(View.VISIBLE);
         progressBar.setVisibility(GONE);
+        tv.setText("加载失败");
+    }
+
+    /**
+     * 失败
+     */
+    public void showFail(String message) {
+        iv.setImageResource(R.mipmap.load_fail);
+        iv.setVisibility(View.VISIBLE);
+        progressBar.setVisibility(GONE);
+        tv.setText(message);
     }
 
     /**
