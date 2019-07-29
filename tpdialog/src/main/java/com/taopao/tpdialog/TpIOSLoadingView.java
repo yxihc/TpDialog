@@ -50,7 +50,7 @@ public class TpIOSLoadingView extends LinearLayout {
      * 成功
      */
     public void showSuccess() {
-        iv.setImageResource(R.mipmap.load_success);
+        iv.setImageResource(R.mipmap.tp_load_success);
         iv.setVisibility(View.VISIBLE);
         progressBar.setVisibility(GONE);
         tv.setText("加载成功");
@@ -60,7 +60,7 @@ public class TpIOSLoadingView extends LinearLayout {
      * 成功
      */
     public void showSuccess(String message) {
-        iv.setImageResource(R.mipmap.load_success);
+        iv.setImageResource(R.mipmap.tp_load_success);
         iv.setVisibility(View.VISIBLE);
         progressBar.setVisibility(GONE);
         tv.setText(message);
@@ -70,7 +70,7 @@ public class TpIOSLoadingView extends LinearLayout {
      * 失败
      */
     public void showFail() {
-        iv.setImageResource(R.mipmap.load_fail);
+        iv.setImageResource(R.mipmap.tp_load_fail);
         iv.setVisibility(View.VISIBLE);
         progressBar.setVisibility(GONE);
         tv.setText("加载失败");
@@ -80,7 +80,7 @@ public class TpIOSLoadingView extends LinearLayout {
      * 失败
      */
     public void showFail(String message) {
-        iv.setImageResource(R.mipmap.load_fail);
+        iv.setImageResource(R.mipmap.tp_load_fail);
         iv.setVisibility(View.VISIBLE);
         progressBar.setVisibility(GONE);
         tv.setText(message);
