@@ -13,4 +13,9 @@
         android:text="显示"
         android:onClick="showLoading"
         android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:text="显示2"
+        android:onClick="showLoading2"
+        android:layout_height="wrap_content" />
 </LinearLayout>

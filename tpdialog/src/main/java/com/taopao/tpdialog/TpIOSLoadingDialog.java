@@ -14,7 +14,7 @@ public class TpIOSLoadingDialog extends Dialog {
     private View mRootView;
 
     private Context mContext;
-    private static TpIOSLoadingView mLoadingview;
+    private TpIOSLoadingView mLoadingview;
 
     public TpIOSLoadingDialog(Context context) {
         super(context, R.style.TpDialogTra);
@@ -26,22 +26,24 @@ public class TpIOSLoadingDialog extends Dialog {
         init(context);
 
     }
+
     private void init(Context context) {
 //        setContentView(R.layout.diaolg_loading);
-        mContext=context;
+        mContext = context;
         mRootView = View.inflate(context, R.layout.diaolg_loading, null);
         setContentView(mRootView);
         Window window = getWindow();
         WindowManager.LayoutParams params = window.getAttributes();
         params.gravity = Gravity.CENTER;
         window.setAttributes(params);
-        initView(context,mRootView);
+        initView(context, mRootView);
     }
 
     private void initView(Context context, View rootView) {
         mLoadingview = rootView.findViewById(R.id.loadingview);
 
     }
+
     public TpIOSLoadingDialog(Context context, int themeResId) {
         super(context, themeResId);
         setContentView(R.layout.diaolg_loading);
@@ -59,7 +61,8 @@ public class TpIOSLoadingDialog extends Dialog {
         DisplayMetrics dm = res.getDisplayMetrics();
         return dm.density;
     }
-    public void setMessage(String message){
+
+    public void setMessage(String message) {
         mLoadingview.setText(message);
     }
 

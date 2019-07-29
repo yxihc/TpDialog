@@ -14,9 +14,9 @@
 
     <ImageView
         android:id="@+id/iv"
-        android:visibility="gone"
         android:layout_width="50dp"
-        android:layout_height="50dp" />
+        android:layout_height="50dp"
+        android:visibility="gone" />
 
     <TextView
         android:id="@+id/tv"
