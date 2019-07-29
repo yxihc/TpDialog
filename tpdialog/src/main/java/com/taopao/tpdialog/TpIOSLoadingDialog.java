@@ -28,9 +28,9 @@ public class TpIOSLoadingDialog extends Dialog {
     }
 
     private void init(Context context) {
-//        setContentView(R.layout.diaolg_loading);
+//        setContentView(R.layout.tp_diaolg_loading);
         mContext = context;
-        mRootView = View.inflate(context, R.layout.diaolg_loading, null);
+        mRootView = View.inflate(context, R.layout.tp_diaolg_loading, null);
         setContentView(mRootView);
         Window window = getWindow();
         WindowManager.LayoutParams params = window.getAttributes();
@@ -46,7 +46,7 @@ public class TpIOSLoadingDialog extends Dialog {
 
     public TpIOSLoadingDialog(Context context, int themeResId) {
         super(context, themeResId);
-        setContentView(R.layout.diaolg_loading);
+        setContentView(R.layout.tp_diaolg_loading);
         init(context);
     }
 

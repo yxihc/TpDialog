@@ -32,7 +32,7 @@ public class TpIOSLoadingView extends LinearLayout {
     }
 
     private void init() {
-        View view = LayoutInflater.from(context).inflate(R.layout.loading_view, this, true);
+        View view = LayoutInflater.from(context).inflate(R.layout.tp_loading_view, this, true);
         progressBar = view.findViewById(R.id.progressBar);
         tv = findViewById(R.id.tv);
         iv = findViewById(R.id.iv);
