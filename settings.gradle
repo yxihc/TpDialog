@@ -1,1 +1,2 @@
-include ':app', ':tpdialog'
+include ':app'
+rootProject.name = "TpDialog"
