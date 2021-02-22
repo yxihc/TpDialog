@@ -1,2 +1,3 @@
+include ':tpdialog'
 include ':app'
 rootProject.name = "TpDialog"

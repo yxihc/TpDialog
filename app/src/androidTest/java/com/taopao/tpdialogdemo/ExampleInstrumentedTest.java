@@ -1,4 +1,4 @@
-package com.taopao.tpdialog;
+package com.taopao.tpdialogdemo;
 
 import android.content.Context;
 

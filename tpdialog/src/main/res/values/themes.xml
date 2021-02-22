@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Tp.BottomSheet" parent="Theme.AppCompat.Dialog">
+<!--        <item name="android:backgroundDimAmount">0.6</item>-->
+<!--        <item name="android:windowNoTitle">true</item>-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+
+        <item name="android:windowNoTitle">true</item>
+<!--        <item name="android:windowBackground">@null</item>-->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:colorBackground">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="tpdialog_title_color">#444444</color>
+    <color name="tpdialog_recycle_decoration_color">#DEE0E2</color>
+
+</resources>
